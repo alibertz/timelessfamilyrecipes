@@ -1,0 +1,32 @@
+.nav {
+  background-color: #ffd97d;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0.4rem;
+  display: grid;
+  align-items: center;
+  .brand {
+    color: red;
+    font-size: 1.4rem;
+    font-family: "Merriweather";
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  .navright {
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .signedIn {
+      display: flex;
+      h5 {
+        margin: 3px;
+        cursor: pointer;
+        font-family: "Merriweather";
+        color: rgb(240, 104, 80);
+      }
+    }
+  }
+}

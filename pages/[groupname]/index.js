@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import nextConnect from "next-connect";
 import { MongoClient } from "mongodb";
+import Header from "../../components/Header";
 
 export default function ({ group }) {
   const router = useRouter();
@@ -9,6 +10,7 @@ export default function ({ group }) {
 
   return (
     <div>
+      <Header />
       <h2>{group.groupName}</h2>
       <h3>{group._id}</h3>
       <h5>{group.groupType}</h5>

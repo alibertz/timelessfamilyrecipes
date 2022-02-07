@@ -1,19 +1,10 @@
 import React from "react";
 import { signIn } from "next-auth/react";
-
-const loginBtn = {
-  backgroundColor: "red",
-  color: "white",
-  padding: "1rem 2rem",
-  margin: "5rem",
-  borderRadius: "1rem",
-  border: "none",
-  cursor: "pointer",
-};
+import styles from "../styles/Components/Login/Login.module.scss";
 
 export default function Login() {
   return (
-    <button onClick={signIn} style={loginBtn}>
+    <button className={styles.button} onClick={signIn}>
       login
     </button>
   );
